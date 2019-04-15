@@ -1,0 +1,22 @@
+﻿<body style="width:1080px;margin:0 auto;display:block;font-size:60px">
+<div style="margin-top:250px;margin-left:150px;">
+<div style="display:inline-block">距离看见德美还有</div>
+<div id="time" style="display:inline-block">
+<script>
+function clock(){
+var date1= new Date("April 19, 2019 23:20:00").getTime();
+var today= new Date().getTime();
+var diff=date1-today;
+var seconds=Math.floor(diff/1000);
+return seconds;}
+function tick(){
+   document.getElementById("time").innerHTML=clock();
+   window.setTimeout("tick()",1000);
+}
+ tick();
+</script>
+
+</div>
+秒
+</div>
+</body>
